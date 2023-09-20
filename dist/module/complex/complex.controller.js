@@ -7,6 +7,10 @@ exports.default = {
     CREATE_COMPLEX: async (req, res) => {
         const { complex_name, complex_description, company_id } = req.body;
         try {
+            const checkcomplex = await complex_model_1.default.findOne({ complex_name });
+            if (checkcomplex) {
+                return res.status(404).json({ message: `${complex_name} already created` });
+            }
             const company = await company_model_1.default.findOne({ _id: company_id });
             const newComplex = await complex_model_1.default.create({
                 complex_name,

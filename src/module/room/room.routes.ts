@@ -5,6 +5,6 @@ import verifytoken from '../../middleware/checktoken'
 const router = Router()
 //export room router
 export const roomRouter: Router = router
-  .post('/admin/room/create', RoomController.CREATE_ROOM)
-  .patch('/admin/room/update/:id', RoomController.UPDATE_ROOM)
-  .delete('/admin/room/delete/:id', RoomController.DELETE_ROOM)
+  .post('/admin/room/create', verifytoken, RoomController.CREATE_ROOM)
+  .patch('/admin/room/update/:id', verifytoken, RoomController.UPDATE_ROOM)
+  .delete('/admin/room/delete/:id', verifytoken, RoomController.DELETE_ROOM)

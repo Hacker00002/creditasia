@@ -6,6 +6,6 @@ const router = Router()
 //export complex router
 export const complexRouter: Router = router
   .get('/complex', ComplexController.GET_COMPLEX)
-  .post('/admin/complex/create', ComplexController.CREATE_COMPLEX)
-  .patch('/admin/complex/update/:id', ComplexController.UPDATE_COMPLEX)
-  .delete('/admin/complex/delete/:id', ComplexController.DELETE_COMPLEX)
+  .post('/admin/complex/create', verifytoken, ComplexController.CREATE_COMPLEX)
+  .patch('/admin/complex/update/:id', verifytoken, ComplexController.UPDATE_COMPLEX)
+  .delete('/admin/complex/delete/:id', verifytoken, ComplexController.DELETE_COMPLEX)

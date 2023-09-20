@@ -6,3 +6,4 @@ tslib_1.__exportStar(require("./company.interface"), exports);
 tslib_1.__exportStar(require("./complex.interface"), exports);
 tslib_1.__exportStar(require("./mortgage.interface"), exports);
 tslib_1.__exportStar(require("./room.interface"), exports);
+tslib_1.__exportStar(require("./bank.interface"), exports);
