@@ -6,15 +6,14 @@ const RoomSchema = new Schema(
     room_name: String,
     room_count: Number,
     room_meters: Number,
+    room_all_meters: Number,
     room_location: String,
     room_all_prices: Number,
     room_credit_price: Number,
-    mortgage: [
-      {
-        ref: 'MortgageModel',
-        type: Types.ObjectId,
-      },
-    ],
+    complex_id: {
+      ref: 'ComplexModel',
+      type: Types.ObjectId,
+    },
   },
   {
     collection: 'room',

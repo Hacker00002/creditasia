@@ -3,5 +3,6 @@ declare const _default: {
     CREATE_COMPLEX: (req: Request, res: Response) => Promise<any>;
     UPDATE_COMPLEX: (req: Request, res: Response) => Promise<any>;
     DELETE_COMPLEX: (req: Request, res: Response) => Promise<any>;
+    GET_COMPLEX: (_: Request, res: Response) => Promise<any>;
 };
 export default _default;

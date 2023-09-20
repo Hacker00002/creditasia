@@ -9,6 +9,12 @@ const ComplexSchema = new Schema(
       ref: 'CompanyModel',
       type: Types.ObjectId,
     },
+    room: [
+      {
+        ref: 'RoomModel',
+        type: Types.ObjectId,
+      },
+    ],
   },
   {
     collection: 'complex',

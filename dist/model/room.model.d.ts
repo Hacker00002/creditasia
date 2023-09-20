@@ -27,15 +27,6 @@ declare const RoomModel: import("mongoose").Model<({
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
-    mortgage: {
-        prototype?: Types.ObjectId;
-        cacheHexString?: unknown;
-        generate?: {};
-        createFromTime?: {};
-        createFromHexString?: {};
-        createFromBase64?: {};
-        isValid?: {};
-    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -47,22 +38,24 @@ declare const RoomModel: import("mongoose").Model<({
     };
     room_name?: string;
     room_count?: number;
-    room_price?: number;
     room_meters?: number;
+    room_all_meters?: number;
     room_location?: string;
+    room_all_prices?: number;
+    room_credit_price?: number;
+    complex_id?: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    };
 }) | (import("mongoose").Document<unknown, {}, {
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
-    mortgage: {
-        prototype?: Types.ObjectId;
-        cacheHexString?: unknown;
-        generate?: {};
-        createFromTime?: {};
-        createFromHexString?: {};
-        createFromBase64?: {};
-        isValid?: {};
-    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -74,22 +67,24 @@ declare const RoomModel: import("mongoose").Model<({
     };
     room_name?: string;
     room_count?: number;
-    room_price?: number;
     room_meters?: number;
+    room_all_meters?: number;
     room_location?: string;
+    room_all_prices?: number;
+    room_credit_price?: number;
+    complex_id?: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    };
 }> & {
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
-    mortgage: {
-        prototype?: Types.ObjectId;
-        cacheHexString?: unknown;
-        generate?: {};
-        createFromTime?: {};
-        createFromHexString?: {};
-        createFromBase64?: {};
-        isValid?: {};
-    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -101,22 +96,24 @@ declare const RoomModel: import("mongoose").Model<({
     };
     room_name?: string;
     room_count?: number;
-    room_price?: number;
     room_meters?: number;
+    room_all_meters?: number;
     room_location?: string;
+    room_all_prices?: number;
+    room_credit_price?: number;
+    complex_id?: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    };
 }), {}, {}, {}, import("mongoose").Document<unknown, {}, ({
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
-    mortgage: {
-        prototype?: Types.ObjectId;
-        cacheHexString?: unknown;
-        generate?: {};
-        createFromTime?: {};
-        createFromHexString?: {};
-        createFromBase64?: {};
-        isValid?: {};
-    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -128,22 +125,24 @@ declare const RoomModel: import("mongoose").Model<({
     };
     room_name?: string;
     room_count?: number;
-    room_price?: number;
     room_meters?: number;
+    room_all_meters?: number;
     room_location?: string;
+    room_all_prices?: number;
+    room_credit_price?: number;
+    complex_id?: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    };
 }) | (import("mongoose").Document<unknown, {}, {
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
-    mortgage: {
-        prototype?: Types.ObjectId;
-        cacheHexString?: unknown;
-        generate?: {};
-        createFromTime?: {};
-        createFromHexString?: {};
-        createFromBase64?: {};
-        isValid?: {};
-    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -155,22 +154,24 @@ declare const RoomModel: import("mongoose").Model<({
     };
     room_name?: string;
     room_count?: number;
-    room_price?: number;
     room_meters?: number;
+    room_all_meters?: number;
     room_location?: string;
+    room_all_prices?: number;
+    room_credit_price?: number;
+    complex_id?: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    };
 }> & {
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
-    mortgage: {
-        prototype?: Types.ObjectId;
-        cacheHexString?: unknown;
-        generate?: {};
-        createFromTime?: {};
-        createFromHexString?: {};
-        createFromBase64?: {};
-        isValid?: {};
-    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -182,22 +183,24 @@ declare const RoomModel: import("mongoose").Model<({
     };
     room_name?: string;
     room_count?: number;
-    room_price?: number;
     room_meters?: number;
+    room_all_meters?: number;
     room_location?: string;
+    room_all_prices?: number;
+    room_credit_price?: number;
+    complex_id?: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    };
 })> & (({
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
-    mortgage: {
-        prototype?: Types.ObjectId;
-        cacheHexString?: unknown;
-        generate?: {};
-        createFromTime?: {};
-        createFromHexString?: {};
-        createFromBase64?: {};
-        isValid?: {};
-    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -209,24 +212,26 @@ declare const RoomModel: import("mongoose").Model<({
     };
     room_name?: string;
     room_count?: number;
-    room_price?: number;
     room_meters?: number;
+    room_all_meters?: number;
     room_location?: string;
+    room_all_prices?: number;
+    room_credit_price?: number;
+    complex_id?: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    };
 } & {
     _id: Types.ObjectId;
 }) | (import("mongoose").Document<unknown, {}, {
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
-    mortgage: {
-        prototype?: Types.ObjectId;
-        cacheHexString?: unknown;
-        generate?: {};
-        createFromTime?: {};
-        createFromHexString?: {};
-        createFromBase64?: {};
-        isValid?: {};
-    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -238,22 +243,24 @@ declare const RoomModel: import("mongoose").Model<({
     };
     room_name?: string;
     room_count?: number;
-    room_price?: number;
     room_meters?: number;
+    room_all_meters?: number;
     room_location?: string;
+    room_all_prices?: number;
+    room_credit_price?: number;
+    complex_id?: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    };
 }> & {
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
-    mortgage: {
-        prototype?: Types.ObjectId;
-        cacheHexString?: unknown;
-        generate?: {};
-        createFromTime?: {};
-        createFromHexString?: {};
-        createFromBase64?: {};
-        isValid?: {};
-    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -265,9 +272,20 @@ declare const RoomModel: import("mongoose").Model<({
     };
     room_name?: string;
     room_count?: number;
-    room_price?: number;
     room_meters?: number;
+    room_all_meters?: number;
     room_location?: string;
+    room_all_prices?: number;
+    room_credit_price?: number;
+    complex_id?: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    };
 } & Required<{
     _id: unknown;
 }>)), Schema<any, import("mongoose").Model<any, any, any, any, any, any>, {}, {}, {}, {}, {
@@ -277,15 +295,6 @@ declare const RoomModel: import("mongoose").Model<({
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
-    mortgage: {
-        prototype?: Types.ObjectId;
-        cacheHexString?: unknown;
-        generate?: {};
-        createFromTime?: {};
-        createFromHexString?: {};
-        createFromBase64?: {};
-        isValid?: {};
-    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -297,22 +306,24 @@ declare const RoomModel: import("mongoose").Model<({
     };
     room_name?: string;
     room_count?: number;
-    room_price?: number;
     room_meters?: number;
+    room_all_meters?: number;
     room_location?: string;
+    room_all_prices?: number;
+    room_credit_price?: number;
+    complex_id?: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    };
 }, import("mongoose").Document<unknown, {}, {
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
-    mortgage: {
-        prototype?: Types.ObjectId;
-        cacheHexString?: unknown;
-        generate?: {};
-        createFromTime?: {};
-        createFromHexString?: {};
-        createFromBase64?: {};
-        isValid?: {};
-    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -324,22 +335,24 @@ declare const RoomModel: import("mongoose").Model<({
     };
     room_name?: string;
     room_count?: number;
-    room_price?: number;
     room_meters?: number;
+    room_all_meters?: number;
     room_location?: string;
+    room_all_prices?: number;
+    room_credit_price?: number;
+    complex_id?: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    };
 }> & {
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
-    mortgage: {
-        prototype?: Types.ObjectId;
-        cacheHexString?: unknown;
-        generate?: {};
-        createFromTime?: {};
-        createFromHexString?: {};
-        createFromBase64?: {};
-        isValid?: {};
-    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -351,9 +364,20 @@ declare const RoomModel: import("mongoose").Model<({
     };
     room_name?: string;
     room_count?: number;
-    room_price?: number;
     room_meters?: number;
+    room_all_meters?: number;
     room_location?: string;
+    room_all_prices?: number;
+    room_credit_price?: number;
+    complex_id?: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    };
 } & {
     _id: Types.ObjectId;
 }>>;

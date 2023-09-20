@@ -9,6 +9,12 @@ const ComplexSchema = new mongoose_1.Schema({
         ref: 'CompanyModel',
         type: mongoose_1.Types.ObjectId,
     },
+    room: [
+        {
+            ref: 'RoomModel',
+            type: mongoose_1.Types.ObjectId,
+        },
+    ],
 }, {
     collection: 'complex',
     timestamps: true,

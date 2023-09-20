@@ -62,7 +62,7 @@ export default {
       return res.status(404).json({ message: error.message })
     }
   },
-  //get company
+  //GET ALL COMPANY****************************************************************
   GET_COMPANY: async (_: Request, res: Response): Promise<any> => {
     try {
       //find company id

@@ -5,15 +5,15 @@ const RoomSchema = new mongoose_1.Schema({
     id: mongoose_1.Types.ObjectId,
     room_name: String,
     room_count: Number,
-    room_price: Number,
     room_meters: Number,
+    room_all_meters: Number,
     room_location: String,
-    mortgage: [
-        {
-            ref: 'MortgageModel',
-            type: mongoose_1.Types.ObjectId,
-        },
-    ],
+    room_all_prices: Number,
+    room_credit_price: Number,
+    complex_id: {
+        ref: 'ComplexModel',
+        type: mongoose_1.Types.ObjectId,
+    },
 }, {
     collection: 'room',
     timestamps: true,

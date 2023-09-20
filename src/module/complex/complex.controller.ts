@@ -1,5 +1,6 @@
 import type { Request, Response } from 'express'
 import { ComplexInterface } from '../../interface'
+import RoomModel from '../../model/room.model'
 import ComplexModel from '../../model/complex.model'
 import CompanyModel from '../../model/company.model'
 
@@ -17,7 +18,7 @@ export default {
         complex_description,
         company_id,
       })
-      //compute complex push new complex
+      //complex push new complex
       company?.complex.push(newComplex?._id)
       //save company details
       company.save()
@@ -76,6 +77,32 @@ export default {
       company.save()
       //return company response success message
       return res.status(201).json({ message: 'Complex deleted successfully' })
+      //cetch the error
+    } catch (error: any) {
+      //return error message
+      return res.status(404).json({ message: error.message })
+    }
+  },
+  //GET ALL COMPLEX****************************************************************
+  GET_COMPLEX: async (_: Request, res: Response): Promise<any> => {
+    try {
+      //find complex id
+      const roomList = await ComplexModel.find().populate({
+        path: 'room',
+        select: [
+          'id',
+          'room_name',
+          'room_count',
+          'room_meters',
+          'room_all_meters',
+          'room_location',
+          'room_all_prices',
+          'room_credit_price',
+          'complex_id',
+        ],
+      })
+      //return company response success message
+      return res.status(201).json({ message: 'Company fetched successfully', roomList })
       //cetch the error
     } catch (error: any) {
       //return error message

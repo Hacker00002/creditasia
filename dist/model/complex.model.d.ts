@@ -27,6 +27,15 @@ declare const ComplexModel: import("mongoose").Model<({
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
+    room: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -51,6 +60,15 @@ declare const ComplexModel: import("mongoose").Model<({
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
+    room: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -75,6 +93,15 @@ declare const ComplexModel: import("mongoose").Model<({
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
+    room: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -99,6 +126,15 @@ declare const ComplexModel: import("mongoose").Model<({
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
+    room: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -123,6 +159,15 @@ declare const ComplexModel: import("mongoose").Model<({
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
+    room: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -147,6 +192,15 @@ declare const ComplexModel: import("mongoose").Model<({
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
+    room: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -171,6 +225,15 @@ declare const ComplexModel: import("mongoose").Model<({
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
+    room: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -197,6 +260,15 @@ declare const ComplexModel: import("mongoose").Model<({
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
+    room: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -221,6 +293,15 @@ declare const ComplexModel: import("mongoose").Model<({
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
+    room: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -250,6 +331,15 @@ declare const ComplexModel: import("mongoose").Model<({
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
+    room: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -274,6 +364,15 @@ declare const ComplexModel: import("mongoose").Model<({
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
+    room: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -298,6 +397,15 @@ declare const ComplexModel: import("mongoose").Model<({
     createdAt: NativeDate;
     updatedAt: NativeDate;
 } & {
+    room: {
+        prototype?: Types.ObjectId;
+        cacheHexString?: unknown;
+        generate?: {};
+        createFromTime?: {};
+        createFromHexString?: {};
+        createFromBase64?: {};
+        isValid?: {};
+    }[];
     id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
