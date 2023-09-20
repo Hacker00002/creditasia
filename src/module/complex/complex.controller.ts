@@ -9,6 +9,12 @@ export default {
     //get complex details from request body
     const { complex_name, complex_description, company_id } = req.body as ComplexInterface
     try {
+      //find complex by name
+      const checkcomplex = await ComplexModel.findOne({ complex_name })
+      //check complex
+      if (checkcomplex) {
+        return res.status(404).json({ message: `${complex_name} already created` })
+      }
       //find company id
       const company = await CompanyModel.findOne({ _id: company_id })
       //create new complex

@@ -6,6 +6,10 @@ exports.default = {
     CREATE_COMPANY: async (req, res) => {
         const { company_name, company_description, company_person_name } = req.body;
         try {
+            const checkcompany = await company_model_1.default.findOne({ company_name });
+            if (checkcompany) {
+                return res.status(404).json({ message: `${company_name} already created` });
+            }
             const newCompany = await company_model_1.default.create({ company_name, company_description, company_person_name });
             newCompany.save();
             return res.status(201).json({ message: 'Company created successfully' });

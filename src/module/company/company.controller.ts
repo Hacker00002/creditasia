@@ -8,6 +8,12 @@ export default {
     //get company details from request body
     const { company_name, company_description, company_person_name } = req.body as CompanyInterface
     try {
+      //find company by name
+      const checkcompany = await CompanyModel.findOne({ company_name })
+      //check company
+      if (checkcompany) {
+        return res.status(404).json({ message: `${company_name} already created` })
+      }
       //create new company
       const newCompany = await CompanyModel.create({ company_name, company_description, company_person_name })
       //sace new company
