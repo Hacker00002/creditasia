@@ -1,0 +1,7 @@
+import type { Request, Response } from 'express';
+declare const _default: {
+    CREATE_COMPLEX: (req: Request, res: Response) => Promise<any>;
+    UPDATE_COMPLEX: (req: Request, res: Response) => Promise<any>;
+    DELETE_COMPLEX: (req: Request, res: Response) => Promise<any>;
+};
+export default _default;
