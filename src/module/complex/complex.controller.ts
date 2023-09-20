@@ -1,6 +1,5 @@
 import type { Request, Response } from 'express'
 import { ComplexInterface } from '../../interface'
-import RoomModel from '../../model/room.model'
 import ComplexModel from '../../model/complex.model'
 import CompanyModel from '../../model/company.model'
 

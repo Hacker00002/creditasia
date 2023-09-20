@@ -6,5 +6,5 @@ const router = Router()
 //export room router
 export const roomRouter: Router = router
   .post('/admin/room/create', RoomController.CREATE_ROOM)
-//   .patch('/admin/complex/update/:id', RoomController.UPDATE_COMPLEX)
-//   .delete('/admin/complex/delete/:id', RoomController.DELETE_COMPLEX)
+  .patch('/admin/room/update/:id', RoomController.UPDATE_ROOM)
+  .delete('/admin/room/delete/:id', RoomController.DELETE_ROOM)

@@ -26,4 +26,40 @@ exports.default = {
             return res.status(404).json({ message: error.message });
         }
     },
+    UPDATE_ROOM: async (req, res) => {
+        const { room_name, room_count, room_meters, room_all_meters, room_location, room_all_prices, room_credit_price } = req.body;
+        const { id } = req.params;
+        try {
+            await room_model_1.default.findOne({ id });
+            await room_model_1.default.updateOne({
+                room_name,
+                room_count,
+                room_meters,
+                room_all_meters,
+                room_location,
+                room_all_prices,
+                room_credit_price,
+            });
+            return res.status(201).json({ message: 'Room updated successfully' });
+        }
+        catch (error) {
+            return res.status(404).json({ message: error.message });
+        }
+    },
+    DELETE_ROOM: async (req, res) => {
+        const { id } = req.params;
+        try {
+            const room = await room_model_1.default.findById(id);
+            const complex = await complex_model_1.default.findById(room?.complex_id);
+            await complex_model_1.default.findByIdAndUpdate(complex?._id, {
+                room: complex?.room.map((e) => e.toString()).filter((e) => e != id),
+            });
+            await room_model_1.default.findByIdAndDelete(id);
+            complex.save();
+            return res.status(201).json({ message: 'Room deleted successfully' });
+        }
+        catch (error) {
+            return res.status(404).json({ message: error.message });
+        }
+    },
 };
