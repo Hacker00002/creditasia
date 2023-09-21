@@ -8,6 +8,7 @@ const checktoken_1 = tslib_1.__importDefault(require("../../middleware/checktoke
 const router = (0, express_1.Router)();
 exports.complexRouter = router
     .get('/complex', complex_controller_1.default.GET_COMPLEX)
+    .get('/complex/:roomid', complex_controller_1.default.GET_COMPLEX_WITH_ID)
     .post('/admin/complex/create', checktoken_1.default, complex_controller_1.default.CREATE_COMPLEX)
     .patch('/admin/complex/update/:id', checktoken_1.default, complex_controller_1.default.UPDATE_COMPLEX)
     .delete('/admin/complex/delete/:id', checktoken_1.default, complex_controller_1.default.DELETE_COMPLEX);

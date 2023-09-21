@@ -69,7 +69,7 @@ export default {
     }
   },
   //GET ALL COMPANY****************************************************************
-  GET_COMPANY: async (_: Request, res: Response): Promise<any> => {
+  GET_COMPANY: async (req: Request, res: Response): Promise<any> => {
     try {
       //find company id
       const complexList = await CompanyModel.find().populate({

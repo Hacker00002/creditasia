@@ -17,72 +17,8 @@ const CalculateSchema = new Schema(
   },
   {
     collection: 'calculate',
-    timestamps: true,...Schema
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      },
+    timestamps: true,
+  },
 )
 
 const calculateModel = model('calculateModel', CalculateSchema)
