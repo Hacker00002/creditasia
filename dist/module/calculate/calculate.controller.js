@@ -21,6 +21,7 @@ exports.default = {
                 complex_name: find_complex_id.complex_name,
                 bank_name: find_bank_id?.bank_name,
                 bank_kredit_amount: find_bank_id?.bank_kredit_amount,
+                room_price: find_roomy_id?.room_all_prices,
                 monthly_payment: monthly,
                 starter_payment: find_roomy_id?.room_credit_price,
                 room_count: find_roomy_id?.room_count,
