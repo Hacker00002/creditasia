@@ -7,10 +7,6 @@ exports.default = {
     CREATE_ROOM: async (req, res) => {
         const { room_name, room_count, room_meters, room_all_meters, room_location, room_all_prices, room_credit_price, complex_id, } = req.body;
         try {
-            const checkroom = await room_model_1.default.findOne({ room_name });
-            if (checkroom) {
-                return res.status(404).json({ message: `${room_name} already created` });
-            }
             const complex = await complex_model_1.default.findOne({ _id: complex_id });
             const newRoom = await room_model_1.default.create({
                 room_name,

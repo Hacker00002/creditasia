@@ -7,3 +7,4 @@ const router = Router()
 export const adminRouter: Router = router
   .get('/admin', verifytoken, AdminController.GET_ADMIN)
   .post('/admin/signin', verifytoken, AdminController.SIGN_IN_ADMIN)
+// .post('/admin/signup', verifytoken, AdminController.SIGN_UP_ADMIN)

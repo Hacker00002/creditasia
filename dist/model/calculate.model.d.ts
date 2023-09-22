@@ -36,9 +36,6 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
-    srog_year?: number;
-    starter_payment?: number;
-    bank_service?: number;
     room_id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -57,6 +54,9 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
+    srog_year?: number;
+    starter_payment?: number;
+    bank_service?: number;
 }) | (import("mongoose").Document<unknown, {}, {
     createdAt: NativeDate;
     updatedAt: NativeDate;
@@ -70,9 +70,6 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
-    srog_year?: number;
-    starter_payment?: number;
-    bank_service?: number;
     room_id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -91,6 +88,9 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
+    srog_year?: number;
+    starter_payment?: number;
+    bank_service?: number;
 }> & {
     createdAt: NativeDate;
     updatedAt: NativeDate;
@@ -104,9 +104,6 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
-    srog_year?: number;
-    starter_payment?: number;
-    bank_service?: number;
     room_id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -125,6 +122,9 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
+    srog_year?: number;
+    starter_payment?: number;
+    bank_service?: number;
 }), {}, {}, {}, import("mongoose").Document<unknown, {}, ({
     createdAt: NativeDate;
     updatedAt: NativeDate;
@@ -138,9 +138,6 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
-    srog_year?: number;
-    starter_payment?: number;
-    bank_service?: number;
     room_id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -159,6 +156,9 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
+    srog_year?: number;
+    starter_payment?: number;
+    bank_service?: number;
 }) | (import("mongoose").Document<unknown, {}, {
     createdAt: NativeDate;
     updatedAt: NativeDate;
@@ -172,9 +172,6 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
-    srog_year?: number;
-    starter_payment?: number;
-    bank_service?: number;
     room_id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -193,6 +190,9 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
+    srog_year?: number;
+    starter_payment?: number;
+    bank_service?: number;
 }> & {
     createdAt: NativeDate;
     updatedAt: NativeDate;
@@ -206,9 +206,6 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
-    srog_year?: number;
-    starter_payment?: number;
-    bank_service?: number;
     room_id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -227,6 +224,9 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
+    srog_year?: number;
+    starter_payment?: number;
+    bank_service?: number;
 })> & (({
     createdAt: NativeDate;
     updatedAt: NativeDate;
@@ -240,9 +240,6 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
-    srog_year?: number;
-    starter_payment?: number;
-    bank_service?: number;
     room_id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -261,6 +258,9 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
+    srog_year?: number;
+    starter_payment?: number;
+    bank_service?: number;
 } & {
     _id: Types.ObjectId;
 }) | (import("mongoose").Document<unknown, {}, {
@@ -276,9 +276,6 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
-    srog_year?: number;
-    starter_payment?: number;
-    bank_service?: number;
     room_id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -297,6 +294,9 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
+    srog_year?: number;
+    starter_payment?: number;
+    bank_service?: number;
 }> & {
     createdAt: NativeDate;
     updatedAt: NativeDate;
@@ -310,9 +310,6 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
-    srog_year?: number;
-    starter_payment?: number;
-    bank_service?: number;
     room_id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -331,6 +328,9 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
+    srog_year?: number;
+    starter_payment?: number;
+    bank_service?: number;
 } & Required<{
     _id: unknown;
 }>)), Schema<any, import("mongoose").Model<any, any, any, any, any, any>, {}, {}, {}, {}, {
@@ -349,9 +349,6 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
-    srog_year?: number;
-    starter_payment?: number;
-    bank_service?: number;
     room_id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -370,6 +367,9 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
+    srog_year?: number;
+    starter_payment?: number;
+    bank_service?: number;
 }, import("mongoose").Document<unknown, {}, {
     createdAt: NativeDate;
     updatedAt: NativeDate;
@@ -383,9 +383,6 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
-    srog_year?: number;
-    starter_payment?: number;
-    bank_service?: number;
     room_id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -404,6 +401,9 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
+    srog_year?: number;
+    starter_payment?: number;
+    bank_service?: number;
 }> & {
     createdAt: NativeDate;
     updatedAt: NativeDate;
@@ -417,9 +417,6 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
-    srog_year?: number;
-    starter_payment?: number;
-    bank_service?: number;
     room_id?: {
         prototype?: Types.ObjectId;
         cacheHexString?: unknown;
@@ -438,6 +435,9 @@ declare const calculateModel: import("mongoose").Model<({
         createFromBase64?: {};
         isValid?: {};
     };
+    srog_year?: number;
+    starter_payment?: number;
+    bank_service?: number;
 } & {
     _id: Types.ObjectId;
 }>>;

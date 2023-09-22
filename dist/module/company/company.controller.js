@@ -46,7 +46,7 @@ exports.default = {
             return res.status(404).json({ message: error.message });
         }
     },
-    GET_COMPANY: async (_, res) => {
+    GET_COMPANY: async (req, res) => {
         try {
             const complexList = await company_model_1.default.find().populate({
                 path: 'complex',

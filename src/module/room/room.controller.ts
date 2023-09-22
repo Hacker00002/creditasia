@@ -18,12 +18,6 @@ export default {
       complex_id,
     } = req.body as RoomInterface
     try {
-      //find complex by name
-      const checkroom = await RoomModel.findOne({ room_name })
-      //check complex
-      if (checkroom) {
-        return res.status(404).json({ message: `${room_name} already created` })
-      }
       //find complex id
       const complex = await ComplexModel.findOne({ _id: complex_id })
       //create new room

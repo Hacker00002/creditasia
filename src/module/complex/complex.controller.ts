@@ -115,32 +115,4 @@ export default {
       return res.status(404).json({ message: error.message })
     }
   },
-  //GET_COMPLEX_WITH_ID****************************************************************
-  GET_COMPLEX_WITH_ID: async (req: Request, res: Response): Promise<any> => {
-    //get id from request params
-    const { id } = req.params
-    try {
-      //find complex id
-      const complex = await ComplexModel.find({ id }).populate({
-        path: 'room',
-        select: [
-          'id',
-          'room_name',
-          'room_count',
-          'room_meters',
-          'room_all_meters',
-          'room_location',
-          'room_all_prices',
-          'room_credit_price',
-          'complex_id',
-        ],
-      })
-      //return complex response success message
-      return res.status(201).json({ message: 'Complex fetched successfully', complex })
-      //cetch the error
-    } catch (error: any) {
-      //return error message
-      return res.status(404).json({ message: error.message })
-    }
-  },
 }
